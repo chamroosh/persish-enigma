@@ -69,7 +69,7 @@
     const secret = await SEA.encrypt(newMessage, '#foo');
     const message = user.get('all').set({ what: secret });
     const index = new Date().toISOString();
-    db.get('chat').get(index).put(message);
+    db.get('chamroosh').get(index).put(message);
     newMessage = '';
     canAutoScroll = true;
     autoScroll();
